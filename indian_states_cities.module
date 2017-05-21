@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file
+ * Contains menu hook.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function indian_states_cities_menu() {
+  $items = array();
+  $items['admin/config/create-state-cities'] = array(
+    'title' => 'Create states and cities as taxonomies terms',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('indian_states_cities_form'),
+    'access arguments' => array('administer site configuration'),
+    'type' => MENU_CALLBACK,
+    'file' => 'indian_states_cities.inc',
+  );
+
+  return $items;
+}
