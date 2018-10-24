@@ -6,4 +6,4 @@
 4. Voila! your states and city taxonomies are ready.
 5. Finally disable this module as you no longer require this.
 
-Note: Run it only once.
+Note: Run it only once!
